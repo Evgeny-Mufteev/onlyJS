@@ -1,4 +1,5 @@
-window.addEventListener("load", () => {
+"use strict";
+window.addEventListener("DOMContentLoaded", () => {
 
   // Открытие выпадающего меню
   const dropdownMenu = () => {
@@ -258,7 +259,7 @@ window.addEventListener("load", () => {
     }
   };
 
-// Добавление ссылки на источник при копировании
+  // Добавление ссылки на источник при копировании
   const addingLinkToCopy = () => {
     document.addEventListener("copy", (event) => {
       const container = document.body;
@@ -273,7 +274,7 @@ window.addEventListener("load", () => {
   } 
   addingLinkToCopy() 
 
-  // Открытие каталога
+  // Открытие каталога отказался от данного способа но код рабочий
   // const startCatalog = (item, popupMenu, header, menu) => {   
   //   const menuItemCatalog = document.querySelector(item);
   //   const dropdownMenu = document.querySelector(popupMenu);
@@ -308,7 +309,7 @@ window.addEventListener("load", () => {
   // startCatalog(".clio-dropdown-info", ".clio-menu-submenu_info", ".clio-header_first_part", ".clio-menu_item");
 
 
-  // Раскрытие вложенного меню
+  // Раскрытие вложенного меню усовершенствовал код выше
   // const nestedMenu = () => {
   //   const dropdown = document.querySelectorAll(".clio-sidenav__dropdown-btn");
   //   for (i = 0; i < dropdown.length; i++) {
